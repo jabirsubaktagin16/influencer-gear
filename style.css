@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+/* common styles or utilities */
+body{
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+h1{
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+
+section{
+    margin-top: 10%;
+}
+
+.container{
+    max-width: 960px;
+    margin:0 auto;
+    padding:0 20px;
+    border-radius: 5px;
+}
+
+.link-btn{
+    padding: 10px 40px;
+    background-color: #e71d36;
+    color: white;
+    border-radius: 40px;
+}
+
+.link-btn i{
+    margin-left: 10px;
+}
+
+/* Header Section */
+header{
+    padding:10px 0;
+}
+
+header .container{
+    max-width: 1100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display:flex;
+}
+
+.logo a{
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.navigation{
+    display:flex;
+}
+
+.navigation-items{
+    display:flex;
+    align-items: center;
+}
+
+.navigation-items li{
+    list-style: none;
+    padding:0 20px;
+}
+
+.navigation-items li a{
+    color:black;
+    font-size: 12px;
+}
+
+.navigation-items li:hover{
+    transition: all 0.2s linear;
+}
+
+.nav-icons{
+    color: black;
+    display:flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+/* Top Bar Infos */
+.top-section.container{
+    max-width: 1100px;
+}
+
+.top-bar-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-text h1{
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.top-text p{
+    font-size: 14px;
+}
+
+.top-img{
+    background-image: url('./images/Circle design.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+/* Logos Section */
+.logos{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 30px;
+    align-items: center;
+}
+
+/* Products Section */
+.products-section h1{
+    text-align: center;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.product{
+    /* text-align: center; */
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    align-items: center;
+    justify-content:center;
+    border-radius: 10px;
+}
+
+.product-img img{
+    width: 100%;
+}
+
+.product-details h2{
+    font-weight: 500;
+    color: #18191F;
+    font-size: 28px;
+}
+
+.product-details h3{
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+
+.product-details p{
+    font-family: 'Inter';
+    font-weight: 700;
+    color: #5E6366;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.rating{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.rating p{
+    font-family: 'Inter';
+    font-weight: 700;
+    color: #5E6366;
+    font-size: 14px;
+}
+
+.fa-star.filled{
+    color: #FB8200;
+}
