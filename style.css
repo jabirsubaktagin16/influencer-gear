@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Manrope:wght@700&display=swap');
+
 /* common styles or utilities */
 body{
     font-family: 'Poppins';
@@ -35,11 +36,18 @@ section{
     padding: 10px 40px;
     background-color: #e71d36;
     color: white;
-    border-radius: 40px;
 }
 
 .link-btn i{
     margin-left: 10px;
+}
+
+.link-btn:hover{
+    background-color: transparent;
+    border: 1px solid #e71d36;
+    color: #e71d36;
+    transition: all 0.2s ease-in;
+    padding: 10px 40px;
 }
 
 /* Header Section */
@@ -114,10 +122,14 @@ header .container{
     font-size: 14px;
 }
 
+.top-text .link-btn{
+    border-radius: 40px;
+}
+
 .top-img{
     background-image: url('./images/Circle design.svg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 95%;
     background-position: center;
 }
 
@@ -130,8 +142,14 @@ header .container{
 }
 
 /* Products Section */
+.products-section{
+    margin-top: 5%;
+}
+
 .products-section h1{
     text-align: center;
+    color: #3A3A3A;
+    font-size: 28px;
 }
 
 .products{
@@ -160,7 +178,7 @@ header .container{
 }
 
 .product-details h3{
-    font-weight: 700;
+    font-weight: 500;
     font-family: 'Inter', sans-serif;
     font-size: 24px;
 }
@@ -186,6 +204,64 @@ header .container{
     font-size: 14px;
 }
 
-.fa-star.filled{
+.filled{
     color: #FB8200;
+}
+
+.empty{
+    color: #aeaeae;
+}
+
+.see-more{
+    color: #e71d36;
+    text-align: right;
+    font-size: 14px;
+}
+
+.featured-products{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin: 5% 0 5% 0;
+}
+
+.featured-text h1{
+    font-weight: 700;
+}
+
+.featured-text p{
+    font-size: 14px;
+}
+
+footer{
+    background-color: #272640;
+    margin-bottom: -10%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer h1{
+    font-size: 24px;
+}
+
+footer p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+footer .fa {
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    background-color: #61a5c2;
+    color: white;
+}
+
+footer a:hover {
+    opacity: 0.5;
 }
