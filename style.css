@@ -18,6 +18,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 2%;
 }
 
@@ -25,14 +26,14 @@ main{
     max-width: 960px;
     margin:0 auto;
     padding:0 20px;
-    border-radius: 5px;
 }
 
 .link-btn{
     padding: 10px 40px;
     background-color: #e71d36;
+    overflow: hidden;
     color: white;
-    transition: 0.2s ease-in;
+    transition: 0.4s all ease-in-out;
 }
 
 .link-btn i{
@@ -43,7 +44,11 @@ main{
     background-color: transparent;
     border: 1px solid #e71d36;
     color: #e71d36;
-    padding: 10px 40px;
+    padding: auto;
+}
+
+.red-text{
+    color: #e71d36;
 }
 
 /* Header Section */
@@ -117,13 +122,14 @@ header .container{
 
 /* Top Bar Infos */
 .top-section.container{
-    max-width: 1100px;
+    margin-top: 5%;
 }
 
 .top-bar-product{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2em;
 }
 
 .top-text h1{
@@ -148,12 +154,13 @@ header .container{
 
 /* Logos Section */
 .logo-section{
-    margin-top: 10%;
+    margin-top: 5%;
 }
+
 .logos{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-column-gap: 10px;
+    grid-column-gap: 15px;
     align-items: center;
     justify-content: center;
 }
@@ -220,18 +227,22 @@ header .container{
     font-size: 14px;
 }
 
+.see-more{
+    color: #e71d36;
+    text-align: right;
+    font-size: 14px;
+}
+
+/* Star */
+.fa-star, .fa-star-half-alt{
+    font-size: 12px;
+}
 .filled{
     color: #FB8200;
 }
 
 .empty{
     color: #aeaeae;
-}
-
-.see-more{
-    color: #e71d36;
-    text-align: right;
-    font-size: 14px;
 }
 
 /* Featured Products */
@@ -251,6 +262,7 @@ header .container{
 
 .featured-text p{
     font-size: 14px;
+    text-align: justify;
 }
 
 /* Footer Section */
@@ -309,6 +321,7 @@ footer a:hover {
     }
     .logos{
         grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 10px;
     }
     .products{
         grid-template-columns: repeat(1, 1fr);
@@ -345,6 +358,7 @@ footer a:hover {
     .featured-products{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1em;
     }
     footer{
         width: 100%;
