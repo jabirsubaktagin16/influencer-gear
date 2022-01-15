@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Manrope:wght@700&display=swap');
 
 /* common styles or utilities */
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins';
     margin: 0;
@@ -29,10 +38,11 @@ main{
 }
 
 .link-btn{
+    background-color: transparent;
+    border: 1px solid #e71d36;
+    color: #e71d36;
     padding: 10px 40px;
-    background-color: #e71d36;
-    overflow: hidden;
-    color: white;
+    
     transition: 0.4s all ease-in-out;
 }
 
@@ -41,10 +51,8 @@ main{
 }
 
 .link-btn:hover{
-    background-color: transparent;
-    border: 1px solid #e71d36;
-    color: #e71d36;
-    padding: auto;
+    background-color: #e71d36;
+    color: white;
 }
 
 .red-text{
@@ -57,7 +65,7 @@ header{
 }
 
 header .container{
-    max-width: 1100px;
+    max-width: 1170px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -139,19 +147,18 @@ header .container{
 
 .top-text p{
     font-size: 14px;
+    text-align: justify;
 }
 
 .top-text .link-btn{
     border-radius: 40px;
 }
-
 .top-img{
-    background-image: url('./images/Circle design.svg');
-    background-repeat: no-repeat;
-    background-size: 95%;
-    background-position: center;
+    width: 100%;
 }
-
+.top-img img{
+    width: 100%;
+}
 /* Logos Section */
 .logo-section{
     margin-top: 5%;
@@ -252,8 +259,21 @@ header .container{
 }
 
 .featured-products{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2em;
+}
+
+.featured-image{
+    width: 100%;
+}
+
+.featured-image img{
+    width: 100%;
+}
+
+.featured-text{
+    width: 100%;
 }
 
 .featured-text h1{
@@ -271,6 +291,7 @@ footer{
     color: white;
     text-align: center;
     padding: 10px;
+    margin: 0;
 }
 
 footer h1{
@@ -320,8 +341,9 @@ footer a:hover {
         margin-top: 10%;
     }
     .logos{
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
     }
     .products{
         grid-template-columns: repeat(1, 1fr);
@@ -356,9 +378,12 @@ footer a:hover {
         grid-template-columns: repeat(2, 1fr);
     }
     .featured-products{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 1em;
+        display: flex;
+        gap: 1em;
+        align-items: center;
+    }
+    .featured-text{
+        margin-top: -5%;
     }
     footer{
         width: 100%;
